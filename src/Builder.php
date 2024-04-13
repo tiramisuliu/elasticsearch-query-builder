@@ -2,7 +2,8 @@
 
 namespace Spatie\ElasticsearchQueryBuilder;
 
-use Elasticsearch\Client;
+use Elasticsearch\Client as ESClient;
+use OpenSearch\Client as OSClient;
 use Spatie\ElasticsearchQueryBuilder\Aggregations\Aggregation;
 use Spatie\ElasticsearchQueryBuilder\Queries\BoolQuery;
 use Spatie\ElasticsearchQueryBuilder\Queries\Query;
@@ -28,7 +29,7 @@ class Builder
 
     protected bool $withAggregations = true;
 
-    public function __construct(protected Client $client)
+    public function __construct(protected ESClient | OSClient $client)
     {
     }
 
