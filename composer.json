@@ -1,5 +1,5 @@
 {
-    "name": "spatie/elasticsearch-query-builder",
+    "name": "spatie-oxblue/elasticsearch-query-builder",
     "description": "Build and execute an Elasticsearch search query using a fluent PHP API",
     "keywords": [
         "spatie",
@@ -27,6 +27,7 @@
     "require-dev": {
         "elasticsearch/elasticsearch": "^7.12",
         "friendsofphp/php-cs-fixer": "^2.17",
+        "opensearch-project/opensearch-php": "^2.2",
         "phpunit/phpunit": "^9.5",
         "spatie/ray": "^1.10",
         "vimeo/psalm": "^4.3"
